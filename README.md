@@ -19,7 +19,9 @@ The **AI-Powered Calculator** is a smart and interactive application that allows
 - **Gemini API** – For AI-based mathematical computation.
 
 ## 📸 Screenshots
-(Include screenshots of the application UI here)
+![Image](https://github.com/user-attachments/assets/ff674af0-a111-415d-bdd3-45bbe79498c8)
+
+![Image](https://github.com/user-attachments/assets/8c0ecbe1-1362-45af-86fe-975947d44254)
 
 ## 🔧 Installation & Setup
 ### **Backend Setup (FastAPI)**

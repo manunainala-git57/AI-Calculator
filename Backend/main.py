@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-# from apps.calculator.route import router as calculator_router
+from apps.calculator.route import router as calculator_router
 from constants import SERVER_URL, PORT, ENV
 
 
@@ -14,12 +14,13 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 
+# CORS Configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=["http://localhost:5173"],  # Allow frontend URL
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
 )
 
 
@@ -27,7 +28,7 @@ app.add_middleware(
 async def root():
     return {"message": "Server is running"}
 
-# app.include_router(calculator_router, prefix="/calculate", tags=["calculate"])
+app.include_router(calculator_router, prefix="/calculate", tags=["calculate"])
 
 
 if __name__ == "__main__":

@@ -48,3 +48,8 @@ export default tseslint.config({
   },
 })
 ```
+
+
+Take user input (e.g., typed or spoken).
+Process it using AI.
+Display the formatted equation dynamically using MathJax.

@@ -27,7 +27,7 @@ The **AI-Powered Calculator** is a smart and interactive application that allows
 ### **Backend Setup (FastAPI)**
 
 # Clone the repository
-git clone https://github.com/your-username/ai-calculator.git
+git clone https://github.com/manunainala-git57/AI-Calculator .
 cd backend
 
 # Create a virtual environment

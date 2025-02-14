@@ -49,7 +49,7 @@ cd frontend
  npm install
 
 # Start the React app
-or npm run dev
+npm run dev
 ```
 
 ## 🚀 Usage
